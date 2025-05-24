@@ -1,0 +1,42 @@
+<div id="game-container">
+  <!-- Start Screen -->
+  <div id="start-page" class="screen">
+    <div id="start-cover">
+      <div class="overlay-text">
+        <p>The Blue Giant has captured Jantu Moni!</p>
+        <p>Rescue him by completing 3 levels and scoring 12 out of 12!</p>
+      </div>
+      <button onclick="startGame()">Start the Quest</button>
+    </div>
+  </div>
+
+  <!-- Level 1 -->
+  <div id="level1" class="screen hidden" style="background-image: url('https://i.postimg.cc/y6RGKHrG/BG.png');">
+    <img src="https://i.postimg.cc/G3Bjwx9h/Chat-GPT-Image-May-24-2025-03-57-28-AM.png" class="character" alt="Doorkeeper" />
+    <p>You encounter the Giant Doorkeeper...</p>
+    <p>Doorkeeper: "Answer these 4 questions to pass into the forest!"</p>
+    <div id="questions-level1" class="question-set"></div>
+  </div>
+
+  <!-- Level 2 -->
+  <div id="level2" class="screen hidden">
+    <img src="https://i.postimg.cc/XYyMrC2V/Chat-GPT-Image-May-24-2025-04-04-12-AM.png" class="bird" alt="Bird Messenger" />
+    <p>A bird appears: "Answer these 6 questions about a wife's duties in Islam."</p>
+    <div id="questions-level2" class="question-set"></div>
+  </div>
+
+  <!-- Level 3 -->
+  <div id="level3" class="screen hidden">
+    <img src="https://i.postimg.cc/05thZfFk/Chat-GPT-Image-May-24-2025-04-09-05-AM.png" class="jantu-moni" alt="Jantu Moni" />
+    <p>The Blue Giant: "Agree to the following terms to free Jantu Moni. Touch if you agree"</p>
+    <button onclick="acceptCommand1()">I will always listen to Jantu Moni</button>
+    <button id="command2" class="hidden" onclick="acceptCommand2()">I promise never to hurt Jantu Moni</button>
+  </div>
+
+  <!-- Congratulations -->
+  <div id="congratulations" class="screen hidden">
+    <h2>Congratulations!</h2>
+    <p>You’ve saved your Jantu Moni!</p>
+    <button onclick="location.reload()">Restart Game</button>
+  </div>
+</div>
